@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="SplView.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SplView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Horizontal">
+        <SplitView Name="mySplit" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="150" > 
+            <SplitView.Pane>
+                <StackPanel>
+                    <TextBlock Text="First" />
+                    <TextBlock Text="Secoind" />
+                    <TextBlock Text="Thrid" />
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <StackPanel>
+                     <TextBlock Text="fouth" />
+                     <TextBlock Text="five" />
+                     <TextBlock Text="Six" />
+                </StackPanel>
+            </SplitView.Content>
+        </SplitView>
+        <Button Content="ClickMe" Click="Button_Click" />
+    </StackPanel>
+</Page>
+
